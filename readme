@@ -1,0 +1,33 @@
+Логи, когда function() не вызываем сразу в OnCreate()
+2024-02-28 02:55:55.535 21558-21558 MainActivity            com.example.happybirthday            D  onPause called
+2024-02-28 02:55:55.553 21558-21558 ViewRootIm...nActivity] com.example.happybirthday            I  MSG_WINDOW_FOCUS_CHANGED 0 0
+2024-02-28 02:57:12.878 21558-21558 MainActivity            com.example.happybirthday            D  onResume called
+2024-02-28 02:57:12.903 21558-21558 ViewRootIm...nActivity] com.example.happybirthday            I  MSG_WINDOW_FOCUS_CHANGED 1 0
+2024-02-28 02:57:12.904 21558-21558 ViewRootIm...nActivity] com.example.happybirthday            D  mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb4000075516403a0}
+2024-02-28 02:58:14.166 22638-22638 MainActivity            com.example.happybirthday            D  onCreate called
+2024-02-28 02:58:14.607 22638-22638 MainActivity            com.example.happybirthday            D  onDestroy called
+2024-02-28 02:59:33.813 22964-22964 MainActivity            com.example.happybirthday            D  onCreate called
+2024-02-28 02:59:33.839 22964-22964 MainActivity            com.example.happybirthday            D  onStart called
+2024-02-28 02:59:33.841 22964-22964 MainActivity            com.example.happybirthday            D  onResume called
+2024-02-28 02:59:33.854 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            I  synced displayState. AttachInfo displayState=2
+2024-02-28 02:59:33.854 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            I  setView = com.android.internal.policy.DecorView@e58b62c TM=true
+2024-02-28 02:59:34.025 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            I  Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=7 res=0x403 s={true 0xb4000075516403a0} ch=true seqId=0
+2024-02-28 02:59:34.025 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            I  performConfigurationChange setNightDimText nightDimLevel=0
+2024-02-28 02:59:34.026 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            D  mThreadedRenderer.initialize() mSurface={isValid=true 0xb4000075516403a0} hwInitialized=true
+2024-02-28 02:59:34.031 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            D  reportNextDraw android.view.ViewRootImpl.performTraversals:4658 android.view.ViewRootImpl.doTraversal:3239 android.view.ViewRootImpl$TraversalRunnable.run:11197 android.view.Choreographer$CallbackRecord.run:1650 android.view.Choreographer$CallbackRecord.run:1659 
+2024-02-28 02:59:34.031 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            D  Setup new sync=wmsSync-ViewRootImpl@c0dfa00[MainActivity]#0
+2024-02-28 02:59:34.032 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            D  Creating new active sync group ViewRootImpl@c0dfa00[MainActivity]#1
+2024-02-28 02:59:34.034 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            D  registerCallbacksForSync syncBuffer=false
+2024-02-28 02:59:34.038 22964-23048 ViewRootIm...nActivity] com.example.happybirthday            D  Received frameDrawingCallback syncResult=0 frameNum=1.
+2024-02-28 02:59:34.038 22964-23048 ViewRootIm...nActivity] com.example.happybirthday            I  mWNT: t=0xb4000074a1610710 mBlastBufferQueue=0xb4000074b161e250 fn= 1 caller= android.view.ViewRootImpl$8.onFrameDraw:13614 android.view.ThreadedRenderer$1.onFrameDraw:788 <bottom of call stack> 
+2024-02-28 02:59:34.038 22964-23048 ViewRootIm...nActivity] com.example.happybirthday            D  Setting up sync and frameCommitCallback
+2024-02-28 02:59:34.056 22964-23018 ViewRootIm...nActivity] com.example.happybirthday            D  Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+2024-02-28 02:59:34.057 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            D  reportDrawFinished
+2024-02-28 02:59:34.069 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            I  registerCallbackForPendingTransactions
+2024-02-28 02:59:34.071 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            I  MSG_WINDOW_FOCUS_CHANGED 1 0
+2024-02-28 02:59:34.072 22964-22964 ViewRootIm...nActivity] com.example.happybirthday            D  mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb4000075516403a0}
+2024-02-28 02:59:34.665 22964-23047 ViewRootIm...nActivity] com.example.happybirthday            I  mWNT: t=0xb4000074a16139f0 mBlastBufferQueue=0xb4000074b161e250 fn= 2 caller= android.view.ViewRootImpl$6.onFrameDraw:5539 android.view.ViewRootImpl$2.onFrameDraw:2103 android.view.ThreadedRenderer$1.onFrameDraw:788 
+
+Логи, когда вызываем function() сразу в OnCreate()
+2024-02-28 03:03:19.837 23559-23559 MainActivity            com.example.happybirthday            D  onCreate called
+2024-02-28 03:03:20.235 23559-23559 MainActivity            com.example.happybirthday            D  onDestroy called
